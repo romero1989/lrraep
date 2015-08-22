@@ -15,7 +15,7 @@ import javax.persistence.UniqueConstraint;
  */
 @Entity
 @Table(name="mdl_user"
-    ,catalog="moodle"
+    ,catalog="ead_gaire"
     , uniqueConstraints = @UniqueConstraint(columnNames={"mnethostid", "username"}) 
 )
 public class MdlUser  implements java.io.Serializable {

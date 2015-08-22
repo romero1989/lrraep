@@ -4,9 +4,17 @@
   <session-factory>
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/moodle</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/ead_gaire</property>
     <property name="hibernate.connection.username">root</property>
     <property name="hibernate.connection.password">root</property>
-    <mapping class="lrraep.bean.MdlUser"/>
+    <mapping class="lrraep.bean.MdlLrraepRank"/>
+        <mapping class="lrraep.bean.MdlLrraepHorario"/>
+        <mapping class="lrraep.bean.MdlLrraepReserva"/>
+        <mapping class="lrraep.bean.MdlUserEnrolments"/>
+        <mapping class="lrraep.bean.MdlLrraepAgendamento"/>
+        <mapping class="lrraep.bean.MdlLrraepMovimentoRobo"/>
+        <mapping class="lrraep.bean.MdlLrraepSugestaoCenario"/>
+        <mapping class="lrraep.bean.MdlUser"/>
+    
   </session-factory>
 </hibernate-configuration>

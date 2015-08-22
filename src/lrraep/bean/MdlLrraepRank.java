@@ -26,7 +26,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="mdl_lrraep_rank"
-    ,catalog="moodle")
+    ,catalog="ead_gaire")
 public class MdlLrraepRank implements Serializable {
     
     @Id @GeneratedValue(strategy=IDENTITY)    

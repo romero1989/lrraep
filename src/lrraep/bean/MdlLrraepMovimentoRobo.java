@@ -19,7 +19,7 @@ import javax.persistence.Table;
  * @author Romero
  */
 @Entity
-@Table(name = "mdl_lrraep_mov_robo", catalog = "moodle")
+@Table(name = "mdl_lrraep_mov_robo", catalog = "ead_gaire")
 public class MdlLrraepMovimentoRobo implements Serializable {
 
     @Id

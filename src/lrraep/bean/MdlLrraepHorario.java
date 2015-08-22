@@ -20,7 +20,7 @@ import javax.persistence.Table;
  * @author Romero
  */
 @Entity
-@Table(name = "mdl_lrraep_horario", catalog = "moodle")
+@Table(name = "mdl_lrraep_horario", catalog = "ead_gaire")
 public class MdlLrraepHorario implements Serializable {
     @Id
     @GeneratedValue(strategy = IDENTITY)

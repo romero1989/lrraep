@@ -171,6 +171,7 @@ public abstract class GenericDAO<T> {
         EntityManager em = PersistenceFactory.createEntityManager();
 
         try {
+            System.out.println(""+this.persistentClass.getSimpleName());
             return new HashSet<T>(em.createQuery("from "
                     + this.persistentClass.getSimpleName()).getResultList());
         } finally {

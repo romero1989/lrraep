@@ -24,7 +24,7 @@ import javax.persistence.Table;
  * @author Romero
  */
 @Entity
-@Table(name = "mdl_lrraep_reserva", catalog = "moodle")
+@Table(name = "mdl_lrraep_reserva", catalog = "ead_gaire")
 public class MdlLrraepReserva implements Serializable {
     @Id
     @GeneratedValue(strategy = IDENTITY)
