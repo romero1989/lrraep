@@ -1,5 +1,5 @@
 package lrraep.bean;
-// Generated 18/08/2015 18:22:00 by Hibernate Tools 3.6.0
+// Generated 16/10/2015 21:32:30 by Hibernate Tools 3.6.0
 
 
 import javax.persistence.Column;
@@ -23,24 +23,24 @@ public class MdlContext  implements java.io.Serializable {
 
      private Long id;
      private long contextlevel;
+     private byte depth;
      private long instanceid;
      private String path;
-     private byte depth;
 
     public MdlContext() {
     }
 
 	
-    public MdlContext(long contextlevel, long instanceid, byte depth) {
+    public MdlContext(long contextlevel, byte depth, long instanceid) {
         this.contextlevel = contextlevel;
-        this.instanceid = instanceid;
         this.depth = depth;
+        this.instanceid = instanceid;
     }
-    public MdlContext(long contextlevel, long instanceid, String path, byte depth) {
+    public MdlContext(long contextlevel, byte depth, long instanceid, String path) {
        this.contextlevel = contextlevel;
+       this.depth = depth;
        this.instanceid = instanceid;
        this.path = path;
-       this.depth = depth;
     }
    
      @Id @GeneratedValue(strategy=IDENTITY)
@@ -66,6 +66,16 @@ public class MdlContext  implements java.io.Serializable {
     }
 
     
+    @Column(name="depth", nullable=false)
+    public byte getDepth() {
+        return this.depth;
+    }
+    
+    public void setDepth(byte depth) {
+        this.depth = depth;
+    }
+
+    
     @Column(name="instanceid", nullable=false)
     public long getInstanceid() {
         return this.instanceid;
@@ -83,16 +93,6 @@ public class MdlContext  implements java.io.Serializable {
     
     public void setPath(String path) {
         this.path = path;
-    }
-
-    
-    @Column(name="depth", nullable=false)
-    public byte getDepth() {
-        return this.depth;
-    }
-    
-    public void setDepth(byte depth) {
-        this.depth = depth;
     }
 
 

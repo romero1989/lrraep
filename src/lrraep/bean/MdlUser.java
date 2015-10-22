@@ -1,5 +1,5 @@
 package lrraep.bean;
-// Generated 25/07/2015 20:45:27 by Hibernate Tools 3.6.0
+// Generated 16/10/2015 21:32:30 by Hibernate Tools 3.6.0
 
 
 import javax.persistence.Column;
@@ -22,164 +22,164 @@ public class MdlUser  implements java.io.Serializable {
 
 
      private Long id;
-     private String auth;
-     private boolean confirmed;
-     private boolean policyagreed;
-     private boolean deleted;
-     private boolean suspended;
-     private long mnethostid;
-     private String username;
-     private String password;
-     private String idnumber;
-     private String firstname;
-     private String lastname;
-     private String email;
-     private boolean emailstop;
-     private String icq;
-     private String skype;
-     private String yahoo;
-     private String aim;
-     private String msn;
-     private String phone1;
-     private String phone2;
-     private String institution;
-     private String department;
      private String address;
-     private String city;
-     private String country;
-     private String lang;
+     private String aim;
+     private String alternatename;
+     private String auth;
+     private boolean autosubscribe;
      private String calendartype;
-     private String theme;
-     private String timezone;
-     private long firstaccess;
-     private long lastaccess;
-     private long lastlogin;
+     private String city;
+     private boolean confirmed;
+     private String country;
      private long currentlogin;
-     private String lastip;
-     private String secret;
-     private long picture;
-     private String url;
+     private boolean deleted;
+     private String department;
      private String description;
      private byte descriptionformat;
-     private boolean mailformat;
+     private String email;
+     private boolean emailstop;
+     private long firstaccess;
+     private String firstname;
+     private String firstnamephonetic;
+     private String icq;
+     private String idnumber;
+     private String imagealt;
+     private String institution;
+     private String lang;
+     private long lastaccess;
+     private String lastip;
+     private long lastlogin;
+     private String lastname;
+     private String lastnamephonetic;
      private boolean maildigest;
      private byte maildisplay;
-     private boolean autosubscribe;
-     private boolean trackforums;
+     private boolean mailformat;
+     private String middlename;
+     private long mnethostid;
+     private String msn;
+     private String password;
+     private String phone1;
+     private String phone2;
+     private long picture;
+     private boolean policyagreed;
+     private String secret;
+     private String skype;
+     private boolean suspended;
+     private String theme;
      private long timecreated;
      private long timemodified;
+     private String timezone;
+     private boolean trackforums;
      private long trustbitmask;
-     private String imagealt;
-     private String lastnamephonetic;
-     private String firstnamephonetic;
-     private String middlename;
-     private String alternatename;
+     private String url;
+     private String username;
+     private String yahoo;
 
     public MdlUser() {
     }
 
 	
-    public MdlUser(String auth, boolean confirmed, boolean policyagreed, boolean deleted, boolean suspended, long mnethostid, String username, String password, String idnumber, String firstname, String lastname, String email, boolean emailstop, String icq, String skype, String yahoo, String aim, String msn, String phone1, String phone2, String institution, String department, String address, String city, String country, String lang, String calendartype, String theme, String timezone, long firstaccess, long lastaccess, long lastlogin, long currentlogin, String lastip, String secret, long picture, String url, byte descriptionformat, boolean mailformat, boolean maildigest, byte maildisplay, boolean autosubscribe, boolean trackforums, long timecreated, long timemodified, long trustbitmask) {
+    public MdlUser(String address, String aim, String auth, boolean autosubscribe, String calendartype, String city, boolean confirmed, String country, long currentlogin, boolean deleted, String department, byte descriptionformat, String email, boolean emailstop, long firstaccess, String firstname, String icq, String idnumber, String institution, String lang, long lastaccess, String lastip, long lastlogin, String lastname, boolean maildigest, byte maildisplay, boolean mailformat, long mnethostid, String msn, String password, String phone1, String phone2, long picture, boolean policyagreed, String secret, String skype, boolean suspended, String theme, long timecreated, long timemodified, String timezone, boolean trackforums, long trustbitmask, String url, String username, String yahoo) {
+        this.address = address;
+        this.aim = aim;
         this.auth = auth;
+        this.autosubscribe = autosubscribe;
+        this.calendartype = calendartype;
+        this.city = city;
         this.confirmed = confirmed;
-        this.policyagreed = policyagreed;
+        this.country = country;
+        this.currentlogin = currentlogin;
         this.deleted = deleted;
-        this.suspended = suspended;
-        this.mnethostid = mnethostid;
-        this.username = username;
-        this.password = password;
-        this.idnumber = idnumber;
-        this.firstname = firstname;
-        this.lastname = lastname;
+        this.department = department;
+        this.descriptionformat = descriptionformat;
         this.email = email;
         this.emailstop = emailstop;
-        this.icq = icq;
-        this.skype = skype;
-        this.yahoo = yahoo;
-        this.aim = aim;
-        this.msn = msn;
-        this.phone1 = phone1;
-        this.phone2 = phone2;
-        this.institution = institution;
-        this.department = department;
-        this.address = address;
-        this.city = city;
-        this.country = country;
-        this.lang = lang;
-        this.calendartype = calendartype;
-        this.theme = theme;
-        this.timezone = timezone;
         this.firstaccess = firstaccess;
+        this.firstname = firstname;
+        this.icq = icq;
+        this.idnumber = idnumber;
+        this.institution = institution;
+        this.lang = lang;
         this.lastaccess = lastaccess;
-        this.lastlogin = lastlogin;
-        this.currentlogin = currentlogin;
         this.lastip = lastip;
-        this.secret = secret;
-        this.picture = picture;
-        this.url = url;
-        this.descriptionformat = descriptionformat;
-        this.mailformat = mailformat;
+        this.lastlogin = lastlogin;
+        this.lastname = lastname;
         this.maildigest = maildigest;
         this.maildisplay = maildisplay;
-        this.autosubscribe = autosubscribe;
-        this.trackforums = trackforums;
+        this.mailformat = mailformat;
+        this.mnethostid = mnethostid;
+        this.msn = msn;
+        this.password = password;
+        this.phone1 = phone1;
+        this.phone2 = phone2;
+        this.picture = picture;
+        this.policyagreed = policyagreed;
+        this.secret = secret;
+        this.skype = skype;
+        this.suspended = suspended;
+        this.theme = theme;
         this.timecreated = timecreated;
         this.timemodified = timemodified;
+        this.timezone = timezone;
+        this.trackforums = trackforums;
         this.trustbitmask = trustbitmask;
+        this.url = url;
+        this.username = username;
+        this.yahoo = yahoo;
     }
-    public MdlUser(String auth, boolean confirmed, boolean policyagreed, boolean deleted, boolean suspended, long mnethostid, String username, String password, String idnumber, String firstname, String lastname, String email, boolean emailstop, String icq, String skype, String yahoo, String aim, String msn, String phone1, String phone2, String institution, String department, String address, String city, String country, String lang, String calendartype, String theme, String timezone, long firstaccess, long lastaccess, long lastlogin, long currentlogin, String lastip, String secret, long picture, String url, String description, byte descriptionformat, boolean mailformat, boolean maildigest, byte maildisplay, boolean autosubscribe, boolean trackforums, long timecreated, long timemodified, long trustbitmask, String imagealt, String lastnamephonetic, String firstnamephonetic, String middlename, String alternatename) {
-       this.auth = auth;
-       this.confirmed = confirmed;
-       this.policyagreed = policyagreed;
-       this.deleted = deleted;
-       this.suspended = suspended;
-       this.mnethostid = mnethostid;
-       this.username = username;
-       this.password = password;
-       this.idnumber = idnumber;
-       this.firstname = firstname;
-       this.lastname = lastname;
-       this.email = email;
-       this.emailstop = emailstop;
-       this.icq = icq;
-       this.skype = skype;
-       this.yahoo = yahoo;
-       this.aim = aim;
-       this.msn = msn;
-       this.phone1 = phone1;
-       this.phone2 = phone2;
-       this.institution = institution;
-       this.department = department;
+    public MdlUser(String address, String aim, String alternatename, String auth, boolean autosubscribe, String calendartype, String city, boolean confirmed, String country, long currentlogin, boolean deleted, String department, String description, byte descriptionformat, String email, boolean emailstop, long firstaccess, String firstname, String firstnamephonetic, String icq, String idnumber, String imagealt, String institution, String lang, long lastaccess, String lastip, long lastlogin, String lastname, String lastnamephonetic, boolean maildigest, byte maildisplay, boolean mailformat, String middlename, long mnethostid, String msn, String password, String phone1, String phone2, long picture, boolean policyagreed, String secret, String skype, boolean suspended, String theme, long timecreated, long timemodified, String timezone, boolean trackforums, long trustbitmask, String url, String username, String yahoo) {
        this.address = address;
-       this.city = city;
-       this.country = country;
-       this.lang = lang;
+       this.aim = aim;
+       this.alternatename = alternatename;
+       this.auth = auth;
+       this.autosubscribe = autosubscribe;
        this.calendartype = calendartype;
-       this.theme = theme;
-       this.timezone = timezone;
-       this.firstaccess = firstaccess;
-       this.lastaccess = lastaccess;
-       this.lastlogin = lastlogin;
+       this.city = city;
+       this.confirmed = confirmed;
+       this.country = country;
        this.currentlogin = currentlogin;
-       this.lastip = lastip;
-       this.secret = secret;
-       this.picture = picture;
-       this.url = url;
+       this.deleted = deleted;
+       this.department = department;
        this.description = description;
        this.descriptionformat = descriptionformat;
-       this.mailformat = mailformat;
+       this.email = email;
+       this.emailstop = emailstop;
+       this.firstaccess = firstaccess;
+       this.firstname = firstname;
+       this.firstnamephonetic = firstnamephonetic;
+       this.icq = icq;
+       this.idnumber = idnumber;
+       this.imagealt = imagealt;
+       this.institution = institution;
+       this.lang = lang;
+       this.lastaccess = lastaccess;
+       this.lastip = lastip;
+       this.lastlogin = lastlogin;
+       this.lastname = lastname;
+       this.lastnamephonetic = lastnamephonetic;
        this.maildigest = maildigest;
        this.maildisplay = maildisplay;
-       this.autosubscribe = autosubscribe;
-       this.trackforums = trackforums;
+       this.mailformat = mailformat;
+       this.middlename = middlename;
+       this.mnethostid = mnethostid;
+       this.msn = msn;
+       this.password = password;
+       this.phone1 = phone1;
+       this.phone2 = phone2;
+       this.picture = picture;
+       this.policyagreed = policyagreed;
+       this.secret = secret;
+       this.skype = skype;
+       this.suspended = suspended;
+       this.theme = theme;
        this.timecreated = timecreated;
        this.timemodified = timemodified;
+       this.timezone = timezone;
+       this.trackforums = trackforums;
        this.trustbitmask = trustbitmask;
-       this.imagealt = imagealt;
-       this.lastnamephonetic = lastnamephonetic;
-       this.firstnamephonetic = firstnamephonetic;
-       this.middlename = middlename;
-       this.alternatename = alternatename;
+       this.url = url;
+       this.username = username;
+       this.yahoo = yahoo;
     }
    
      @Id @GeneratedValue(strategy=IDENTITY)
@@ -195,163 +195,13 @@ public class MdlUser  implements java.io.Serializable {
     }
 
     
-    @Column(name="auth", nullable=false, length=20)
-    public String getAuth() {
-        return this.auth;
+    @Column(name="address", nullable=false)
+    public String getAddress() {
+        return this.address;
     }
     
-    public void setAuth(String auth) {
-        this.auth = auth;
-    }
-
-    
-    @Column(name="confirmed", nullable=false)
-    public boolean isConfirmed() {
-        return this.confirmed;
-    }
-    
-    public void setConfirmed(boolean confirmed) {
-        this.confirmed = confirmed;
-    }
-
-    
-    @Column(name="policyagreed", nullable=false)
-    public boolean isPolicyagreed() {
-        return this.policyagreed;
-    }
-    
-    public void setPolicyagreed(boolean policyagreed) {
-        this.policyagreed = policyagreed;
-    }
-
-    
-    @Column(name="deleted", nullable=false)
-    public boolean isDeleted() {
-        return this.deleted;
-    }
-    
-    public void setDeleted(boolean deleted) {
-        this.deleted = deleted;
-    }
-
-    
-    @Column(name="suspended", nullable=false)
-    public boolean isSuspended() {
-        return this.suspended;
-    }
-    
-    public void setSuspended(boolean suspended) {
-        this.suspended = suspended;
-    }
-
-    
-    @Column(name="mnethostid", nullable=false)
-    public long getMnethostid() {
-        return this.mnethostid;
-    }
-    
-    public void setMnethostid(long mnethostid) {
-        this.mnethostid = mnethostid;
-    }
-
-    
-    @Column(name="username", nullable=false, length=100)
-    public String getUsername() {
-        return this.username;
-    }
-    
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    
-    @Column(name="password", nullable=false)
-    public String getPassword() {
-        return this.password;
-    }
-    
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    
-    @Column(name="idnumber", nullable=false)
-    public String getIdnumber() {
-        return this.idnumber;
-    }
-    
-    public void setIdnumber(String idnumber) {
-        this.idnumber = idnumber;
-    }
-
-    
-    @Column(name="firstname", nullable=false, length=100)
-    public String getFirstname() {
-        return this.firstname;
-    }
-    
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
-    }
-
-    
-    @Column(name="lastname", nullable=false, length=100)
-    public String getLastname() {
-        return this.lastname;
-    }
-    
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
-    }
-
-    
-    @Column(name="email", nullable=false, length=100)
-    public String getEmail() {
-        return this.email;
-    }
-    
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    
-    @Column(name="emailstop", nullable=false)
-    public boolean isEmailstop() {
-        return this.emailstop;
-    }
-    
-    public void setEmailstop(boolean emailstop) {
-        this.emailstop = emailstop;
-    }
-
-    
-    @Column(name="icq", nullable=false, length=15)
-    public String getIcq() {
-        return this.icq;
-    }
-    
-    public void setIcq(String icq) {
-        this.icq = icq;
-    }
-
-    
-    @Column(name="skype", nullable=false, length=50)
-    public String getSkype() {
-        return this.skype;
-    }
-    
-    public void setSkype(String skype) {
-        this.skype = skype;
-    }
-
-    
-    @Column(name="yahoo", nullable=false, length=50)
-    public String getYahoo() {
-        return this.yahoo;
-    }
-    
-    public void setYahoo(String yahoo) {
-        this.yahoo = yahoo;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     
@@ -365,93 +215,33 @@ public class MdlUser  implements java.io.Serializable {
     }
 
     
-    @Column(name="msn", nullable=false, length=50)
-    public String getMsn() {
-        return this.msn;
+    @Column(name="alternatename")
+    public String getAlternatename() {
+        return this.alternatename;
     }
     
-    public void setMsn(String msn) {
-        this.msn = msn;
-    }
-
-    
-    @Column(name="phone1", nullable=false, length=20)
-    public String getPhone1() {
-        return this.phone1;
-    }
-    
-    public void setPhone1(String phone1) {
-        this.phone1 = phone1;
+    public void setAlternatename(String alternatename) {
+        this.alternatename = alternatename;
     }
 
     
-    @Column(name="phone2", nullable=false, length=20)
-    public String getPhone2() {
-        return this.phone2;
+    @Column(name="auth", nullable=false, length=20)
+    public String getAuth() {
+        return this.auth;
     }
     
-    public void setPhone2(String phone2) {
-        this.phone2 = phone2;
-    }
-
-    
-    @Column(name="institution", nullable=false)
-    public String getInstitution() {
-        return this.institution;
-    }
-    
-    public void setInstitution(String institution) {
-        this.institution = institution;
+    public void setAuth(String auth) {
+        this.auth = auth;
     }
 
     
-    @Column(name="department", nullable=false)
-    public String getDepartment() {
-        return this.department;
+    @Column(name="autosubscribe", nullable=false)
+    public boolean isAutosubscribe() {
+        return this.autosubscribe;
     }
     
-    public void setDepartment(String department) {
-        this.department = department;
-    }
-
-    
-    @Column(name="address", nullable=false)
-    public String getAddress() {
-        return this.address;
-    }
-    
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    
-    @Column(name="city", nullable=false, length=120)
-    public String getCity() {
-        return this.city;
-    }
-    
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    
-    @Column(name="country", nullable=false, length=2)
-    public String getCountry() {
-        return this.country;
-    }
-    
-    public void setCountry(String country) {
-        this.country = country;
-    }
-
-    
-    @Column(name="lang", nullable=false, length=30)
-    public String getLang() {
-        return this.lang;
-    }
-    
-    public void setLang(String lang) {
-        this.lang = lang;
+    public void setAutosubscribe(boolean autosubscribe) {
+        this.autosubscribe = autosubscribe;
     }
 
     
@@ -465,53 +255,33 @@ public class MdlUser  implements java.io.Serializable {
     }
 
     
-    @Column(name="theme", nullable=false, length=50)
-    public String getTheme() {
-        return this.theme;
+    @Column(name="city", nullable=false, length=120)
+    public String getCity() {
+        return this.city;
     }
     
-    public void setTheme(String theme) {
-        this.theme = theme;
-    }
-
-    
-    @Column(name="timezone", nullable=false, length=100)
-    public String getTimezone() {
-        return this.timezone;
-    }
-    
-    public void setTimezone(String timezone) {
-        this.timezone = timezone;
+    public void setCity(String city) {
+        this.city = city;
     }
 
     
-    @Column(name="firstaccess", nullable=false)
-    public long getFirstaccess() {
-        return this.firstaccess;
+    @Column(name="confirmed", nullable=false)
+    public boolean isConfirmed() {
+        return this.confirmed;
     }
     
-    public void setFirstaccess(long firstaccess) {
-        this.firstaccess = firstaccess;
-    }
-
-    
-    @Column(name="lastaccess", nullable=false)
-    public long getLastaccess() {
-        return this.lastaccess;
-    }
-    
-    public void setLastaccess(long lastaccess) {
-        this.lastaccess = lastaccess;
+    public void setConfirmed(boolean confirmed) {
+        this.confirmed = confirmed;
     }
 
     
-    @Column(name="lastlogin", nullable=false)
-    public long getLastlogin() {
-        return this.lastlogin;
+    @Column(name="country", nullable=false, length=2)
+    public String getCountry() {
+        return this.country;
     }
     
-    public void setLastlogin(long lastlogin) {
-        this.lastlogin = lastlogin;
+    public void setCountry(String country) {
+        this.country = country;
     }
 
     
@@ -525,43 +295,23 @@ public class MdlUser  implements java.io.Serializable {
     }
 
     
-    @Column(name="lastip", nullable=false, length=45)
-    public String getLastip() {
-        return this.lastip;
+    @Column(name="deleted", nullable=false)
+    public boolean isDeleted() {
+        return this.deleted;
     }
     
-    public void setLastip(String lastip) {
-        this.lastip = lastip;
-    }
-
-    
-    @Column(name="secret", nullable=false, length=15)
-    public String getSecret() {
-        return this.secret;
-    }
-    
-    public void setSecret(String secret) {
-        this.secret = secret;
+    public void setDeleted(boolean deleted) {
+        this.deleted = deleted;
     }
 
     
-    @Column(name="picture", nullable=false)
-    public long getPicture() {
-        return this.picture;
+    @Column(name="department", nullable=false)
+    public String getDepartment() {
+        return this.department;
     }
     
-    public void setPicture(long picture) {
-        this.picture = picture;
-    }
-
-    
-    @Column(name="url", nullable=false)
-    public String getUrl() {
-        return this.url;
-    }
-    
-    public void setUrl(String url) {
-        this.url = url;
+    public void setDepartment(String department) {
+        this.department = department;
     }
 
     
@@ -585,13 +335,153 @@ public class MdlUser  implements java.io.Serializable {
     }
 
     
-    @Column(name="mailformat", nullable=false)
-    public boolean isMailformat() {
-        return this.mailformat;
+    @Column(name="email", nullable=false, length=100)
+    public String getEmail() {
+        return this.email;
     }
     
-    public void setMailformat(boolean mailformat) {
-        this.mailformat = mailformat;
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    
+    @Column(name="emailstop", nullable=false)
+    public boolean isEmailstop() {
+        return this.emailstop;
+    }
+    
+    public void setEmailstop(boolean emailstop) {
+        this.emailstop = emailstop;
+    }
+
+    
+    @Column(name="firstaccess", nullable=false)
+    public long getFirstaccess() {
+        return this.firstaccess;
+    }
+    
+    public void setFirstaccess(long firstaccess) {
+        this.firstaccess = firstaccess;
+    }
+
+    
+    @Column(name="firstname", nullable=false, length=100)
+    public String getFirstname() {
+        return this.firstname;
+    }
+    
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
+    }
+
+    
+    @Column(name="firstnamephonetic")
+    public String getFirstnamephonetic() {
+        return this.firstnamephonetic;
+    }
+    
+    public void setFirstnamephonetic(String firstnamephonetic) {
+        this.firstnamephonetic = firstnamephonetic;
+    }
+
+    
+    @Column(name="icq", nullable=false, length=15)
+    public String getIcq() {
+        return this.icq;
+    }
+    
+    public void setIcq(String icq) {
+        this.icq = icq;
+    }
+
+    
+    @Column(name="idnumber", nullable=false)
+    public String getIdnumber() {
+        return this.idnumber;
+    }
+    
+    public void setIdnumber(String idnumber) {
+        this.idnumber = idnumber;
+    }
+
+    
+    @Column(name="imagealt")
+    public String getImagealt() {
+        return this.imagealt;
+    }
+    
+    public void setImagealt(String imagealt) {
+        this.imagealt = imagealt;
+    }
+
+    
+    @Column(name="institution", nullable=false)
+    public String getInstitution() {
+        return this.institution;
+    }
+    
+    public void setInstitution(String institution) {
+        this.institution = institution;
+    }
+
+    
+    @Column(name="lang", nullable=false, length=30)
+    public String getLang() {
+        return this.lang;
+    }
+    
+    public void setLang(String lang) {
+        this.lang = lang;
+    }
+
+    
+    @Column(name="lastaccess", nullable=false)
+    public long getLastaccess() {
+        return this.lastaccess;
+    }
+    
+    public void setLastaccess(long lastaccess) {
+        this.lastaccess = lastaccess;
+    }
+
+    
+    @Column(name="lastip", nullable=false, length=45)
+    public String getLastip() {
+        return this.lastip;
+    }
+    
+    public void setLastip(String lastip) {
+        this.lastip = lastip;
+    }
+
+    
+    @Column(name="lastlogin", nullable=false)
+    public long getLastlogin() {
+        return this.lastlogin;
+    }
+    
+    public void setLastlogin(long lastlogin) {
+        this.lastlogin = lastlogin;
+    }
+
+    
+    @Column(name="lastname", nullable=false, length=100)
+    public String getLastname() {
+        return this.lastname;
+    }
+    
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    
+    @Column(name="lastnamephonetic")
+    public String getLastnamephonetic() {
+        return this.lastnamephonetic;
+    }
+    
+    public void setLastnamephonetic(String lastnamephonetic) {
+        this.lastnamephonetic = lastnamephonetic;
     }
 
     
@@ -615,23 +505,133 @@ public class MdlUser  implements java.io.Serializable {
     }
 
     
-    @Column(name="autosubscribe", nullable=false)
-    public boolean isAutosubscribe() {
-        return this.autosubscribe;
+    @Column(name="mailformat", nullable=false)
+    public boolean isMailformat() {
+        return this.mailformat;
     }
     
-    public void setAutosubscribe(boolean autosubscribe) {
-        this.autosubscribe = autosubscribe;
+    public void setMailformat(boolean mailformat) {
+        this.mailformat = mailformat;
     }
 
     
-    @Column(name="trackforums", nullable=false)
-    public boolean isTrackforums() {
-        return this.trackforums;
+    @Column(name="middlename")
+    public String getMiddlename() {
+        return this.middlename;
     }
     
-    public void setTrackforums(boolean trackforums) {
-        this.trackforums = trackforums;
+    public void setMiddlename(String middlename) {
+        this.middlename = middlename;
+    }
+
+    
+    @Column(name="mnethostid", nullable=false)
+    public long getMnethostid() {
+        return this.mnethostid;
+    }
+    
+    public void setMnethostid(long mnethostid) {
+        this.mnethostid = mnethostid;
+    }
+
+    
+    @Column(name="msn", nullable=false, length=50)
+    public String getMsn() {
+        return this.msn;
+    }
+    
+    public void setMsn(String msn) {
+        this.msn = msn;
+    }
+
+    
+    @Column(name="password", nullable=false)
+    public String getPassword() {
+        return this.password;
+    }
+    
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    
+    @Column(name="phone1", nullable=false, length=20)
+    public String getPhone1() {
+        return this.phone1;
+    }
+    
+    public void setPhone1(String phone1) {
+        this.phone1 = phone1;
+    }
+
+    
+    @Column(name="phone2", nullable=false, length=20)
+    public String getPhone2() {
+        return this.phone2;
+    }
+    
+    public void setPhone2(String phone2) {
+        this.phone2 = phone2;
+    }
+
+    
+    @Column(name="picture", nullable=false)
+    public long getPicture() {
+        return this.picture;
+    }
+    
+    public void setPicture(long picture) {
+        this.picture = picture;
+    }
+
+    
+    @Column(name="policyagreed", nullable=false)
+    public boolean isPolicyagreed() {
+        return this.policyagreed;
+    }
+    
+    public void setPolicyagreed(boolean policyagreed) {
+        this.policyagreed = policyagreed;
+    }
+
+    
+    @Column(name="secret", nullable=false, length=15)
+    public String getSecret() {
+        return this.secret;
+    }
+    
+    public void setSecret(String secret) {
+        this.secret = secret;
+    }
+
+    
+    @Column(name="skype", nullable=false, length=50)
+    public String getSkype() {
+        return this.skype;
+    }
+    
+    public void setSkype(String skype) {
+        this.skype = skype;
+    }
+
+    
+    @Column(name="suspended", nullable=false)
+    public boolean isSuspended() {
+        return this.suspended;
+    }
+    
+    public void setSuspended(boolean suspended) {
+        this.suspended = suspended;
+    }
+
+    
+    @Column(name="theme", nullable=false, length=50)
+    public String getTheme() {
+        return this.theme;
+    }
+    
+    public void setTheme(String theme) {
+        this.theme = theme;
     }
 
     
@@ -655,6 +655,26 @@ public class MdlUser  implements java.io.Serializable {
     }
 
     
+    @Column(name="timezone", nullable=false, length=100)
+    public String getTimezone() {
+        return this.timezone;
+    }
+    
+    public void setTimezone(String timezone) {
+        this.timezone = timezone;
+    }
+
+    
+    @Column(name="trackforums", nullable=false)
+    public boolean isTrackforums() {
+        return this.trackforums;
+    }
+    
+    public void setTrackforums(boolean trackforums) {
+        this.trackforums = trackforums;
+    }
+
+    
     @Column(name="trustbitmask", nullable=false)
     public long getTrustbitmask() {
         return this.trustbitmask;
@@ -665,53 +685,33 @@ public class MdlUser  implements java.io.Serializable {
     }
 
     
-    @Column(name="imagealt")
-    public String getImagealt() {
-        return this.imagealt;
+    @Column(name="url", nullable=false)
+    public String getUrl() {
+        return this.url;
     }
     
-    public void setImagealt(String imagealt) {
-        this.imagealt = imagealt;
-    }
-
-    
-    @Column(name="lastnamephonetic")
-    public String getLastnamephonetic() {
-        return this.lastnamephonetic;
-    }
-    
-    public void setLastnamephonetic(String lastnamephonetic) {
-        this.lastnamephonetic = lastnamephonetic;
+    public void setUrl(String url) {
+        this.url = url;
     }
 
     
-    @Column(name="firstnamephonetic")
-    public String getFirstnamephonetic() {
-        return this.firstnamephonetic;
+    @Column(name="username", nullable=false, length=100)
+    public String getUsername() {
+        return this.username;
     }
     
-    public void setFirstnamephonetic(String firstnamephonetic) {
-        this.firstnamephonetic = firstnamephonetic;
-    }
-
-    
-    @Column(name="middlename")
-    public String getMiddlename() {
-        return this.middlename;
-    }
-    
-    public void setMiddlename(String middlename) {
-        this.middlename = middlename;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     
-    @Column(name="alternatename")
-    public String getAlternatename() {
-        return this.alternatename;
+    @Column(name="yahoo", nullable=false, length=50)
+    public String getYahoo() {
+        return this.yahoo;
     }
     
-    public void setAlternatename(String alternatename) {
-        this.alternatename = alternatename;
+    public void setYahoo(String yahoo) {
+        this.yahoo = yahoo;
     }
 
 

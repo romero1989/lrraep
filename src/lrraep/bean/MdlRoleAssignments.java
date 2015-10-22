@@ -1,5 +1,5 @@
 package lrraep.bean;
-// Generated 18/08/2015 18:22:00 by Hibernate Tools 3.6.0
+// Generated 16/10/2015 21:32:30 by Hibernate Tools 3.6.0
 
 
 import javax.persistence.Column;

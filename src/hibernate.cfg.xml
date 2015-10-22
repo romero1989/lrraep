@@ -4,17 +4,26 @@
   <session-factory>
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
     <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/ead_gaire</property>
+    <property name="hibernate.connection.url">jdbc:mysql://192.168.0.104:3306/ead_gaire</property>
     <property name="hibernate.connection.username">root</property>
     <property name="hibernate.connection.password">root</property>
+    <mapping class="lrraep.bean.MdlContext"/>
     <mapping class="lrraep.bean.MdlLrraepRank"/>
-        <mapping class="lrraep.bean.MdlLrraepHorario"/>
-        <mapping class="lrraep.bean.MdlLrraepReserva"/>
-        <mapping class="lrraep.bean.MdlUserEnrolments"/>
-        <mapping class="lrraep.bean.MdlLrraepAgendamento"/>
-        <mapping class="lrraep.bean.MdlLrraepMovimentoRobo"/>
-        <mapping class="lrraep.bean.MdlLrraepSugestaoCenario"/>
-        <mapping class="lrraep.bean.MdlUser"/>
-    
+    <mapping class="lrraep.bean.MdlContext"/>
+    <mapping class="lrraep.bean.MdlLrraepExecucao"/>
+    <mapping class="lrraep.bean.MdlLrraepAgendamento"/>
+    <mapping class="lrraep.bean.MdlRoleAssignments"/>
+    <mapping class="lrraep.bean.MdlLrraepSugestaoCenario"/>
+    <mapping class="lrraep.bean.MdlLrraepDesafioUsuario"/>
+    <mapping class="lrraep.bean.MdlLrraepMovimento"/>
+    <mapping class="lrraep.bean.MdlLrraepFeedback"/>
+    <mapping class="lrraep.bean.MdlLrraepHorario"/>
+    <mapping class="lrraep.bean.MdlLrraepReserva"/>
+    <mapping class="lrraep.bean.MdlLrraepDesafio"/>
+    <mapping class="lrraep.bean.MdlUserEnrolments"/>
+    <mapping class="lrraep.bean.MdlLrraepMovimentoRobo"/>
+    <mapping class="lrraep.bean.MdlLrraep"/>
+    <mapping class="lrraep.bean.MdlUser"/>
+    <mapping class="lrraep.bean.MdlLrraepDesafioUsuarioId"/>
   </session-factory>
 </hibernate-configuration>

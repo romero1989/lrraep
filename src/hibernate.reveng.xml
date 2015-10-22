@@ -2,5 +2,10 @@
 <!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
 <hibernate-reverse-engineering>
   <schema-selection match-catalog="ead_gaire"/>
-  <table-filter match-name="mdl_user"/>
+  <!-- <table-filter match-name="mdl_lrraep"/> 
+  <table-filter match-name="mdl_lrraep_execucao"/>
+  <table-filter match-name="mdl_lrraep_feedback"/> 
+  <table-filter match-name="mdl_lrraep_desafio"/> -->
+  <table-filter match-name="mdl_lrraep_desafio_usuario"/>
+  
 </hibernate-reverse-engineering>
